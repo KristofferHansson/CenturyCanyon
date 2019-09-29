@@ -33,7 +33,7 @@ public class PlayerController2 : MonoBehaviour
         else if (Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.LeftArrow))
             x += 1.0f;
 
-        if (canJump && Input.GetKeyDown(KeyCode.Space))
+        if (canJump && Input.GetKeyDown(KeyCode.RightControl))
         {
             // jump
             jump = true;

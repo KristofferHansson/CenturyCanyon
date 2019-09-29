@@ -5,6 +5,9 @@ using UnityEngine;
 public class PlayerController1 : MonoBehaviour
 {
     [SerializeField] private float move_Speed = 1.0f;
+    [SerializeField] private GameObject shortTreePrefab;
+    [SerializeField] private GameObject vinePrefab;
+    private ILevelScript lvl;
 
     private Rigidbody m_Rigidbody;
     private Vector3 move;
@@ -15,31 +18,36 @@ public class PlayerController1 : MonoBehaviour
     void Start()
     {
         m_Rigidbody = GetComponent<Rigidbody>();
+
+        if (lvl == null || lvl.Equals(default(ILevelScript)))
+        {
+            Component[] temp = GameObject.Find("LevelMaster").GetComponents(typeof(Component));
+            foreach (Component c in temp)
+            {
+                if (c is ILevelScript)
+                {
+                    lvl = c as ILevelScript;
+                    break;
+                }
+            }
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+        /// Movement
         float x = 0.0f, z = 0.0f;
-
-        // Check for input // Convert to getaxes
-        //if (Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S))
-        //    z += 1.0f;
-        //else if (Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.W))
-        //    z += -1.0f;
-
         if (Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
             x += -1.0f;
         else if (Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A))
             x += 1.0f;
-
         if (canJump && Input.GetKeyDown(KeyCode.Space))
         {
             // jump
             jump = true;
             canJump = false;
         }
-
         // Update movement vector
         move.x = x;
         move.z = z;
@@ -53,6 +61,19 @@ public class PlayerController1 : MonoBehaviour
             move.y = 3.0f;
 
         Move();
+
+
+        /// Other actions
+        if (Input.GetKeyDown(KeyCode.E)) // short tree
+        {
+            print("spawn short tree");
+            GameObject t = Instantiate(shortTreePrefab);
+            t.GetComponent<ShortTree>().Spawn(this.transform.position + new Vector3(2.0f,0f,0f), new Vector3(lvl.GetOffset(),0f,0f));
+        }
+        else if (Input.GetKeyDown(KeyCode.E)) // vine
+        {
+
+        }
     }
 
     private void Move()

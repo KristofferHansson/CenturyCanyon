@@ -9,7 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1327723888290694963}
-  - component: {fileID: 3758425702741176720}
+  - component: {fileID: 1896478639976228394}
+  - component: {fileID: 4434646858730596995}
   m_Layer: 0
   m_Name: JumpResetTrigger
   m_TagString: Untagged
@@ -25,13 +26,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2518928250946692}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -0.62, z: 0}
+  m_LocalScale: {x: 0.5, y: 1, z: 0.5}
   m_Children: []
   m_Father: {fileID: 2347211229665754925}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3758425702741176720
+--- !u!114 &1896478639976228394
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,10 +41,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 2518928250946692}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3a0e25825e5372448a4bf4f9e1bffb5, type: 3}
+  m_Script: {fileID: 11500000, guid: 2ecec1102aacc7a47b80cbdae01c94ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pc: {fileID: 0}
+  pc: {fileID: 4885128411701318479}
+--- !u!65 &4434646858730596995
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2518928250946692}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2838284248806387242
 GameObject:
   m_ObjectHideFlags: 0
@@ -219,7 +233,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5987353077968363571}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!1 &7404387838094300757
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,7 +283,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 88
+  m_Constraints: 120
   m_CollisionDetection: 0
 --- !u!114 &4885128411701318479
 MonoBehaviour:
@@ -283,4 +297,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56a4fbb58f5fa1041a713e20bd651f83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move_Speed: 5
+  move_Speed: 10

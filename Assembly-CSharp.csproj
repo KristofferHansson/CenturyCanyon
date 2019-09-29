@@ -57,9 +57,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\LevelScripts\ILevelScript.cs" />
+    <Compile Include="Assets\Scripts\LevelScripts\L00_MechanicsTestbed.cs" />
     <Compile Include="Assets\Scripts\PColliderEnter.cs" />
+    <Compile Include="Assets\Scripts\PColliderEnter2.cs" />
     <Compile Include="Assets\Scripts\PlayerController1.cs" />
     <Compile Include="Assets\Scripts\PlayerController2.cs" />
+    <Compile Include="Assets\Scripts\Spawnables\ISpawnable.cs" />
+    <Compile Include="Assets\Scripts\Spawnables\ShortTree.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Public/Documents/Unity Projects/CenturyCanyon/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
