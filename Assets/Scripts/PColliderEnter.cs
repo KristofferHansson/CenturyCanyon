@@ -8,6 +8,7 @@ public class PColliderEnter : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        pc.ResetJump();
+        if (!other.gameObject.name.Equals("PCapsule1"))
+            pc.ResetJump();
     }
 }
