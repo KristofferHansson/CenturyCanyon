@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\PlayerController2.cs" />
     <Compile Include="Assets\Scripts\Spawnables\ISpawnable.cs" />
     <Compile Include="Assets\Scripts\Spawnables\ShortTree.cs" />
+    <Compile Include="Assets\Scripts\Water.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Public/Documents/Unity Projects/CenturyCanyon/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

@@ -52,7 +52,6 @@ public class PlayerController1 : MonoBehaviour
         move.x = x;
         move.z = z;
         move.Normalize();
-        move = Quaternion.Euler(0f, -45f, 0f) * move;
         move *= move_Speed;
         //move.y = Physics.gravity.y * Time.deltaTime * 2.0f;
         if (move.y < -3.0f)
@@ -66,13 +65,13 @@ public class PlayerController1 : MonoBehaviour
         /// Other actions
         if (Input.GetKeyDown(KeyCode.E)) // short tree
         {
-            print("spawn short tree");
             GameObject t = Instantiate(shortTreePrefab);
-            t.GetComponent<ShortTree>().Spawn(this.transform.position + new Vector3(2.0f,0f,0f), new Vector3(lvl.GetOffset(),0f,0f));
+            t.GetComponent<ShortTree>().Spawn(this.transform.position + new Vector3(1.5f, -0.5f, 0f), new Vector3(lvl.GetOffset(), 0f, 0f));
         }
-        else if (Input.GetKeyDown(KeyCode.E)) // vine
+        else if (Input.GetKeyDown(KeyCode.Q)) // vine
         {
-
+            GameObject t = Instantiate(vinePrefab);
+            t.GetComponent<ShortTree>().Spawn(this.transform.position + new Vector3(1.5f, -0.5f, 0f), new Vector3(lvl.GetOffset(), 0f, 0f));
         }
     }
 
@@ -81,7 +80,6 @@ public class PlayerController1 : MonoBehaviour
         m_Rigidbody.velocity = new Vector3(move.x, m_Rigidbody.velocity.y, move.z);
         if (jump)
         {
-            print("jumping");
             m_Rigidbody.AddForce(Vector3.up * 400.0f);
             jump = false;
         }

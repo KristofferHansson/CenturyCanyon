@@ -209,7 +209,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -300,4 +300,5 @@ MonoBehaviour:
   move_Speed: 10
   shortTreePrefab: {fileID: 2339170386175618613, guid: a5ad0dd9c0aebe64e9e0e92f63e1445a,
     type: 3}
-  vinePrefab: {fileID: 0}
+  vinePrefab: {fileID: 2339170386175618613, guid: 65cebceab77797f489d20a388c820661,
+    type: 3}
