@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: UP
-  force: 17
+  force: 20
   countdown: 3
   movementDuration: 0.8
   destructionCountdown: 3

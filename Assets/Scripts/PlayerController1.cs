@@ -81,7 +81,7 @@ public class PlayerController1 : MonoBehaviour
         m_Rigidbody.velocity = new Vector3(move.x, m_Rigidbody.velocity.y, move.z);
         if (jump)
         {
-            m_Rigidbody.AddForce(Vector3.up * 400.0f);
+            m_Rigidbody.AddForce(Vector3.up * 300.0f);
             jump = false;
             canJump = false;
         }

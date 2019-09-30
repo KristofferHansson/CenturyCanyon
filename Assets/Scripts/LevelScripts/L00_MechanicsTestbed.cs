@@ -13,6 +13,8 @@ public class L00_MechanicsTestbed : MonoBehaviour, ILevelScript
     [SerializeField] private GameObject p1;
     private GameObject p2;
 
+    private int playersInCompletionTrigger = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -58,5 +60,23 @@ public class L00_MechanicsTestbed : MonoBehaviour, ILevelScript
             p2.GetComponent<Rigidbody>().useGravity = false;
             p2 = null;
         }
-}
+    }
+
+    public void PlayerIn()
+    {
+        playersInCompletionTrigger++;
+
+        if (playersInCompletionTrigger >= 2)
+            LevelComplete();
+    }
+
+    public void PlayerOut()
+    {
+        playersInCompletionTrigger--;
+    }
+
+    public void LevelComplete()
+    {
+        ui.ShowLevelCompletePanel();
+    }
 }

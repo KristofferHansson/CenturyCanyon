@@ -57,6 +57,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\LadderTrigger.cs" />
     <Compile Include="Assets\Scripts\LevelScripts\ILevelScript.cs" />
     <Compile Include="Assets\Scripts\LevelScripts\L00_MechanicsTestbed.cs" />
     <Compile Include="Assets\Scripts\PColliderEnter.cs" />
@@ -68,6 +69,7 @@
     <Compile Include="Assets\Scripts\Spawnables\ShortTree\ShortTree.cs" />
     <Compile Include="Assets\Scripts\Spawnables\ThrustBlock\ThrustBlock.cs" />
     <Compile Include="Assets\Scripts\Spawnables\ThrustBlock\ThrustBlockMaster.cs" />
+    <Compile Include="Assets\Scripts\Spawnables\VineTrigger.cs" />
     <Compile Include="Assets\Scripts\TorchDouse.cs" />
     <Compile Include="Assets\Scripts\UIMiddleman.cs" />
     <Compile Include="Assets\Scripts\Water.cs" />

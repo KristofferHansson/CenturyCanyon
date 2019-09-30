@@ -90,7 +90,7 @@ public class PlayerController2 : MonoBehaviour
         if (jump)
         {
             print("jumping");
-            m_Rigidbody.AddForce(Vector3.up * 400.0f);
+            m_Rigidbody.AddForce(Vector3.up * 300.0f);
             jump = false;
         }
     }
