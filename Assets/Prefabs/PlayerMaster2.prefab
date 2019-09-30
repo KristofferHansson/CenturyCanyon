@@ -71,7 +71,7 @@ GameObject:
   - component: {fileID: 5555897542367621851}
   - component: {fileID: 2986647070389296486}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: P2Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -210,7 +210,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -298,3 +298,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   move_Speed: 10
+  thrustBlock: {fileID: 2353032783166340931, guid: 1bc821a0bbb4b3746ac4e7330817c660,
+    type: 3}
+  physicsBlock: {fileID: 0}

@@ -74,8 +74,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3239999232302861114}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.11, z: 0}
-  m_LocalScale: {x: 1, y: 5.219, z: 1}
+  m_LocalPosition: {x: 0, y: 2.459, z: 0}
+  m_LocalScale: {x: 1, y: 5.9183455, z: 1}
   m_Children: []
   m_Father: {fileID: 4613752630240046565}
   m_RootOrder: 1
@@ -227,7 +227,7 @@ BoxCollider:
   m_GameObject: {fileID: 3239999232872213188}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -274,6 +274,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7841749773029632929}
   - component: {fileID: 2904290254978395196}
+  - component: {fileID: 7266454780687800535}
   m_Layer: 0
   m_Name: ClimbTrigger
   m_TagString: Untagged
@@ -308,6 +309,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.4, y: 6, z: 1.4}
   m_Center: {x: 0, y: 2.57, z: 0}
+--- !u!114 &7266454780687800535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4275759280400145349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 703d0e13b8d949a49819ce7e4855a15e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6568655257721175747
 GameObject:
   m_ObjectHideFlags: 0

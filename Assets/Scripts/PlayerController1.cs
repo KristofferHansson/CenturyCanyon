@@ -46,7 +46,6 @@ public class PlayerController1 : MonoBehaviour
         {
             // jump
             jump = true;
-            canJump = false;
         }
         // Update movement vector
         move.x = x;
@@ -61,17 +60,19 @@ public class PlayerController1 : MonoBehaviour
 
         Move();
 
-
-        /// Other actions
-        if (Input.GetKeyDown(KeyCode.E)) // short tree
+        if (canJump)
         {
-            GameObject t = Instantiate(shortTreePrefab);
-            t.GetComponent<ShortTree>().Spawn(this.transform.position + new Vector3(1.5f, -0.5f, 0f), new Vector3(lvl.GetOffset(), 0f, 0f));
-        }
-        else if (Input.GetKeyDown(KeyCode.Q)) // vine
-        {
-            GameObject t = Instantiate(vinePrefab);
-            t.GetComponent<ShortTree>().Spawn(this.transform.position + new Vector3(1.5f, -0.5f, 0f), new Vector3(lvl.GetOffset(), 0f, 0f));
+            /// Other actions
+            if (Input.GetKeyDown(KeyCode.E)) // short tree
+            {
+                GameObject t = Instantiate(shortTreePrefab);
+                t.GetComponent<ShortTree>().Spawn(this.transform.position + new Vector3(1.5f, -0.5f, 0f), new Vector3(lvl.GetOffset(), 0f, 0f));
+            }
+            else if (Input.GetKeyDown(KeyCode.Q)) // vine
+            {
+                GameObject t = Instantiate(vinePrefab);
+                t.GetComponent<ShortTree>().Spawn(this.transform.position + new Vector3(1.5f, -0.5f, 0f), new Vector3(lvl.GetOffset(), 0f, 0f));
+            }
         }
     }
 
@@ -82,11 +83,17 @@ public class PlayerController1 : MonoBehaviour
         {
             m_Rigidbody.AddForce(Vector3.up * 400.0f);
             jump = false;
+            canJump = false;
         }
     }
 
     public void ResetJump()
     {
         canJump = true;
+    }
+
+    public void Die()
+    {
+        Destroy(this);
     }
 }

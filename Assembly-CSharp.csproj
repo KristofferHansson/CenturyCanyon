@@ -64,8 +64,14 @@
     <Compile Include="Assets\Scripts\PlayerController1.cs" />
     <Compile Include="Assets\Scripts\PlayerController2.cs" />
     <Compile Include="Assets\Scripts\Spawnables\ISpawnable.cs" />
-    <Compile Include="Assets\Scripts\Spawnables\ShortTree.cs" />
+    <Compile Include="Assets\Scripts\Spawnables\ShortTree\ClimbTrigger.cs" />
+    <Compile Include="Assets\Scripts\Spawnables\ShortTree\ShortTree.cs" />
+    <Compile Include="Assets\Scripts\Spawnables\ThrustBlock\ThrustBlock.cs" />
+    <Compile Include="Assets\Scripts\Spawnables\ThrustBlock\ThrustBlockMaster.cs" />
+    <Compile Include="Assets\Scripts\TorchDouse.cs" />
+    <Compile Include="Assets\Scripts\UIMiddleman.cs" />
     <Compile Include="Assets\Scripts\Water.cs" />
+    <Compile Include="Assets\Scripts\WaterKill.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Public/Documents/Unity Projects/CenturyCanyon/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

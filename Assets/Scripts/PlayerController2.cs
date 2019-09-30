@@ -5,6 +5,9 @@ using UnityEngine;
 public class PlayerController2 : MonoBehaviour
 {
     [SerializeField] private float move_Speed = 1.0f;
+    [SerializeField] private GameObject thrustBlock;
+    [SerializeField] private GameObject physicsBlock;
+    private ILevelScript lvl;
 
     private Rigidbody m_Rigidbody;
     private Vector3 move;
@@ -15,6 +18,19 @@ public class PlayerController2 : MonoBehaviour
     void Start()
     {
         m_Rigidbody = GetComponent<Rigidbody>();
+
+        if (lvl == null || lvl.Equals(default(ILevelScript)))
+        {
+            Component[] temp = GameObject.Find("LevelMaster").GetComponents(typeof(Component));
+            foreach (Component c in temp)
+            {
+                if (c is ILevelScript)
+                {
+                    lvl = c as ILevelScript;
+                    break;
+                }
+            }
+        }
     }
 
     // Update is called once per frame
@@ -53,6 +69,19 @@ public class PlayerController2 : MonoBehaviour
             move.y = 3.0f;
 
         Move();
+
+
+        /// Other actions
+        if (Input.GetKeyDown(KeyCode.Keypad0)) // short tree
+        {
+            GameObject t = Instantiate(thrustBlock);
+            t.GetComponent<ThrustBlockMaster>().Spawn(this.transform.position + new Vector3(1.5f, -0.5f, 0f), new Vector3(-lvl.GetOffset(), 0f, 0f));
+        }
+        else if (Input.GetKeyDown(KeyCode.Keypad1)) // vine
+        {
+            GameObject t = Instantiate(physicsBlock);
+            //t.GetComponent<ShortTree>().Spawn(this.transform.position + new Vector3(1.5f, -0.5f, 0f), new Vector3(-lvl.GetOffset(), 0f, 0f));
+        }
     }
 
     private void Move()
@@ -69,5 +98,10 @@ public class PlayerController2 : MonoBehaviour
     public void ResetJump()
     {
         canJump = true;
+    }
+
+    public void Die()
+    {
+        Destroy(this);
     }
 }
