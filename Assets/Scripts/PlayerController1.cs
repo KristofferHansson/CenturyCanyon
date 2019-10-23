@@ -7,7 +7,7 @@ public class PlayerController1 : MonoBehaviour
     [SerializeField] private float move_Speed = 1.0f;
     [SerializeField] private GameObject shortTreePrefab;
     [SerializeField] private GameObject vinePrefab;
-    private ILevelScript lvl;
+    private LevelScript lvl;
 
     private Rigidbody m_Rigidbody;
     private Vector3 move;
@@ -19,14 +19,14 @@ public class PlayerController1 : MonoBehaviour
     {
         m_Rigidbody = GetComponent<Rigidbody>();
 
-        if (lvl == null || lvl.Equals(default(ILevelScript)))
+        if (lvl == null || lvl.Equals(default(LevelScript)))
         {
             Component[] temp = GameObject.Find("LevelMaster").GetComponents(typeof(Component));
             foreach (Component c in temp)
             {
-                if (c is ILevelScript)
+                if (c is LevelScript)
                 {
-                    lvl = c as ILevelScript;
+                    lvl = c as LevelScript;
                     break;
                 }
             }
