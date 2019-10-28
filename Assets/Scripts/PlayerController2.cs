@@ -36,14 +36,8 @@ public class PlayerController2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /// Movement
         float x = 0.0f, z = 0.0f;
-
-        // Check for input // Convert to getaxes
-        //if (Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S))
-        //    z += 1.0f;
-        //else if (Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.W))
-        //    z += -1.0f;
-
         if (Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow))
             x += -1.0f;
         else if (Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.LeftArrow))

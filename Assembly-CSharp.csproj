@@ -69,6 +69,9 @@
     <Compile Include="Assets\Scripts\Spawnables\ShortTree\ShortTree.cs" />
     <Compile Include="Assets\Scripts\Spawnables\ThrustBlock\ThrustBlock.cs" />
     <Compile Include="Assets\Scripts\Spawnables\ThrustBlock\ThrustBlockMaster.cs" />
+    <Compile Include="Assets\Scripts\Spawnables\VineStuff\AutoConnectHingeJoint.cs" />
+    <Compile Include="Assets\Scripts\Spawnables\VineStuff\Vine.cs" />
+    <Compile Include="Assets\Scripts\Spawnables\VineStuff\VineSegmentTrigger.cs" />
     <Compile Include="Assets\Scripts\Spawnables\VineTrigger.cs" />
     <Compile Include="Assets\Scripts\TorchDouse.cs" />
     <Compile Include="Assets\Scripts\UIMiddleman.cs" />
@@ -91,9 +94,6 @@
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>C:/Users/Public/Documents/Unity Projects/CenturyCanyon/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/Public/Documents/Unity Projects/CenturyCanyon/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/Public/Documents/Unity Projects/CenturyCanyon/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
