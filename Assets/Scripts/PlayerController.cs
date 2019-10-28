@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour
     private bool onVine = false; // attached to vine
     private VineSegmentTrigger vineSeg = null;
 
+    private bool isUnderwater = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,6 +50,9 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
+            if (isUnderwater)
+                move *= 0.3f;
+
             m_Rigidbody.velocity = new Vector3(move.x, m_Rigidbody.velocity.y, move.z);
             if (jump)
             {
@@ -67,6 +72,7 @@ public class PlayerController : MonoBehaviour
     {
         Destroy(this);
     }
+
 
     public void SetOnVine(VineSegmentTrigger vineSeg)
     {
@@ -89,5 +95,10 @@ public class PlayerController : MonoBehaviour
     public void VineExited()
     {
         inVine = false;
+    }
+
+    public void SetUnderwater(bool tf)
+    {
+        isUnderwater = tf;
     }
 }

@@ -18,4 +18,24 @@ public class Water : MonoBehaviour
     {
         this.transform.position += new Vector3(0f,riseRate,0f);
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.name.Equals("P2Capsule") || other.gameObject.name.Equals("P1Capsule"))
+        {
+            GameObject player = other.gameObject.transform.parent.gameObject;
+            PlayerController pc = player.GetComponent<PlayerController>();
+            pc.SetUnderwater(true);
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.name.Equals("P2Capsule") || other.gameObject.name.Equals("P1Capsule"))
+        {
+            GameObject player = other.gameObject.transform.parent.gameObject;
+            PlayerController pc = player.GetComponent<PlayerController>();
+            pc.SetUnderwater(false);
+        }
+    }
 }
