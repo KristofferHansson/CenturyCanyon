@@ -7,6 +7,7 @@ public class PlayerController1 : PlayerController
     [SerializeField] private float move_Speed = 1.0f;
     [SerializeField] private GameObject shortTreePrefab;
     [SerializeField] private GameObject vinePrefab;
+    [SerializeField] private GameObject bbushPrefab;
 
     // Update is called once per frame
     void Update()
@@ -46,6 +47,11 @@ public class PlayerController1 : PlayerController
             else if (Input.GetKeyDown(KeyCode.Q)) // vine
             {
                 GameObject t = Instantiate(vinePrefab);
+                t.GetComponent<ShortTree>().Spawn(this.transform.position + new Vector3(1.5f, -0.5f, 0f), new Vector3(lvl.GetOffset(), 0f, 0f));
+            }
+            else if (Input.GetKeyDown(KeyCode.R)) // vine
+            {
+                GameObject t = Instantiate(bbushPrefab);
                 t.GetComponent<ShortTree>().Spawn(this.transform.position + new Vector3(1.5f, -0.5f, 0f), new Vector3(lvl.GetOffset(), 0f, 0f));
             }
         }

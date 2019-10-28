@@ -302,3 +302,5 @@ MonoBehaviour:
     type: 3}
   vinePrefab: {fileID: 2339170386175618613, guid: 65cebceab77797f489d20a388c820661,
     type: 3}
+  bbushPrefab: {fileID: 7916894657575862337, guid: ec5379f6435897340a83ad41bcbb2baa,
+    type: 3}
