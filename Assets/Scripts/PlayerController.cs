@@ -10,7 +10,8 @@ public class PlayerController : MonoBehaviour
     protected bool canJump = true;
     protected bool jump = false;
 
-    private bool onVine = false;
+    private bool inVine = false; // in vine collision (can be true while !onVine or onVine)
+    private bool onVine = false; // attached to vine
     private VineSegmentTrigger vineSeg = null;
 
     // Start is called before the first frame update
@@ -71,11 +72,22 @@ public class PlayerController : MonoBehaviour
     {
         this.vineSeg = vineSeg;
         onVine = true;
+        inVine = true;
         canJump = true;
     }
 
     public bool IsOnVine()
     {
         return onVine;
+    }
+
+    public bool IsInVine()
+    {
+        return inVine;
+    }
+
+    public void VineExited()
+    {
+        inVine = false;
     }
 }

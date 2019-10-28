@@ -9,19 +9,19 @@ public class LevelScript : MonoBehaviour
     [SerializeField] protected GameObject futureOnly;
     [SerializeField] protected GameObject player1Prefab;
     [SerializeField] protected GameObject player2Prefab;
-    //[SerializeField] private Transform p1Transform;
     [SerializeField] protected Transform spawnPoint;
-    [SerializeField] protected UIMiddleman ui;
+    [SerializeField] protected UIMiddleman ui = null;
 
     protected GameObject p1;
     protected GameObject p2;
     protected float offset;
-    protected int playersInCompletionTrigger = 0;
+    protected bool player1InLadder = false;
+    protected bool player2InLadder = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        if (ui is null)
+        if (ui is null || ui == null)
             ui = GameObject.Find("UIMaster").GetComponent<UIMiddleman>();
 
         offset = waterBox.GetComponent<Renderer>().bounds.extents.magnitude * 2 + 100;
@@ -46,6 +46,8 @@ public class LevelScript : MonoBehaviour
     // When one of the players dies
     public void ReportFailure()
     {
+        print(player1InLadder);
+        print(player2InLadder);
         ui.ShowEndGamePanel();
 
         if (!(p1 is null))
@@ -68,18 +70,26 @@ public class LevelScript : MonoBehaviour
     }
 
     // Player enters end-level trigger
-    public void PlayerIn()
+    public void PlayerIn(bool player1)
     {
-        playersInCompletionTrigger++;
+        if (player1)
+            player1InLadder = true;
+        else
+            player2InLadder = true;
 
-        if (playersInCompletionTrigger >= 2)
+        if (player1InLadder && player2InLadder)
+        {
             LevelComplete();
+        }
     }
 
     // Player exits end-level trigger
-    public void PlayerOut()
+    public void PlayerOut(bool player1)
     {
-        playersInCompletionTrigger--;
+        if (player1)
+            player1InLadder = false;
+        else
+            player2InLadder = false;
     }
 
     public void LevelComplete()

@@ -12,7 +12,7 @@ public class VineSegmentTrigger : MonoBehaviour
         {
             player = other.gameObject.transform.parent.gameObject;
             PlayerController pc = player.GetComponent<PlayerController>();
-            if (!(pc.IsOnVine()))
+            if (!pc.IsOnVine() && !pc.IsInVine())
             {
                 pc.SetOnVine(this);
                 StopMotion();
@@ -39,6 +39,8 @@ public class VineSegmentTrigger : MonoBehaviour
 
     private void StartMotion()
     {
+        PlayerController pc = player.GetComponent<PlayerController>();
+        pc.VineExited();
         Rigidbody rb = player.GetComponent<Rigidbody>();
         rb.useGravity = true;
         player = null;
