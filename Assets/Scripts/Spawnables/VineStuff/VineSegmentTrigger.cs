@@ -11,7 +11,14 @@ public class VineSegmentTrigger : MonoBehaviour
         if (other.gameObject.name.Equals("P1Capsule") || other.gameObject.name.Equals("P2Capsule"))
         {
             player = other.gameObject.transform.parent.gameObject;
-            Invoke("StopMotion", 0.1f);
+            PlayerController pc = player.GetComponent<PlayerController>();
+            if (!(pc.IsOnVine()))
+            {
+                pc.SetOnVine(this);
+                StopMotion();
+                HingeJoint hj = player.AddComponent<HingeJoint>();
+                hj.connectedBody = this.GetComponent<Rigidbody>();
+            }
         }
     }
 
@@ -35,5 +42,10 @@ public class VineSegmentTrigger : MonoBehaviour
         Rigidbody rb = player.GetComponent<Rigidbody>();
         rb.useGravity = true;
         player = null;
+    }
+
+    public void ReleasePlayer()
+    {
+        Destroy(player.GetComponent<HingeJoint>());
     }
 }

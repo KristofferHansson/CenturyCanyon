@@ -16,8 +16,7 @@ public class Vine : MonoBehaviour
     {
         for (int i = 0; i < numberOfSegments; i++)
         {
-            GameObject seg = Instantiate(segmentPrefab, this.transform.position, Quaternion.identity);
-            seg.transform.parent = this.transform;
+            GameObject seg = Instantiate(segmentPrefab, this.transform.position, Quaternion.identity, this.transform);
             //seg.transform.localPosition = Vector3.zero;
             currentOffset += offset;
             seg.transform.position += new Vector3(0f, -currentOffset, 0f);
