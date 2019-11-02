@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WaterKill : MonoBehaviour
 {
-    [SerializeField] private LevelScript lvl;
+    [SerializeField] private L00_MechanicsTestbed lvl;
 
     // Start is called before the first frame update
     void Start()

@@ -4,28 +4,20 @@ using UnityEngine;
 
 public class LadderTrigger : MonoBehaviour
 {
-    [SerializeField] private LevelScript lvl;
+    [SerializeField] private L00_MechanicsTestbed lvl;
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name.Equals("P1Capsule"))
+        if (other.gameObject.name.Equals("P2Capsule") || other.gameObject.name.Equals("P1Capsule"))
         {
-            lvl.PlayerIn(true);
-        }
-        else if (other.gameObject.name.Equals("P2Capsule"))
-        {
-            lvl.PlayerIn(false);
+            lvl.PlayerIn();
         }
     }
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.name.Equals("P1Capsule"))
+        if (other.gameObject.name.Equals("P2Capsule") || other.gameObject.name.Equals("P1Capsule"))
         {
-            lvl.PlayerOut(true);
-        }
-        else if (other.gameObject.name.Equals("P2Capsule"))
-        {
-            lvl.PlayerOut(false);
+            lvl.PlayerOut();
         }
     }
 }

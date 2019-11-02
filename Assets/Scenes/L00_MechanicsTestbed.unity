@@ -149,7 +149,6 @@ Transform:
   m_Children:
   - {fileID: 47043040040549464}
   - {fileID: 46326976}
-  - {fileID: 6829710619212773726}
   m_Father: {fileID: 1905909359}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1983,7 +1982,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205ae64ac98d41947a775e237934d62e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  riseRate: 0.005
+  riseRate: 0.001
 --- !u!54 &1433683894
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2784,81 +2783,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3780247374695527480, guid: fa6a5e5851489da478c1c605fd5abd9a,
     type: 3}
   m_PrefabInstance: {fileID: 47043040040549463}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &6829710619212773725
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 3815417}
-    m_Modifications:
-    - target: {fileID: 7916894657575862337, guid: ec5379f6435897340a83ad41bcbb2baa,
-        type: 3}
-      propertyPath: m_Name
-      value: BouncingBush
-      objectReference: {fileID: 0}
-    - target: {fileID: 8162412288440430261, guid: ec5379f6435897340a83ad41bcbb2baa,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8162412288440430261, guid: ec5379f6435897340a83ad41bcbb2baa,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8162412288440430261, guid: ec5379f6435897340a83ad41bcbb2baa,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8162412288440430261, guid: ec5379f6435897340a83ad41bcbb2baa,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8162412288440430261, guid: ec5379f6435897340a83ad41bcbb2baa,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8162412288440430261, guid: ec5379f6435897340a83ad41bcbb2baa,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8162412288440430261, guid: ec5379f6435897340a83ad41bcbb2baa,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8162412288440430261, guid: ec5379f6435897340a83ad41bcbb2baa,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8162412288440430261, guid: ec5379f6435897340a83ad41bcbb2baa,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8162412288440430261, guid: ec5379f6435897340a83ad41bcbb2baa,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8162412288440430261, guid: ec5379f6435897340a83ad41bcbb2baa,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ec5379f6435897340a83ad41bcbb2baa, type: 3}
---- !u!4 &6829710619212773726 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8162412288440430261, guid: ec5379f6435897340a83ad41bcbb2baa,
-    type: 3}
-  m_PrefabInstance: {fileID: 6829710619212773725}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7036990233621743024
 PrefabInstance:

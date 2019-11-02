@@ -2,17 +2,48 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController2 : PlayerController
+public class PlayerController2 : MonoBehaviour
 {
     [SerializeField] private float move_Speed = 1.0f;
     [SerializeField] private GameObject thrustBlock;
     [SerializeField] private GameObject physicsBlock;
+    private LevelScript lvl;
+
+    private Rigidbody m_Rigidbody;
+    private Vector3 move;
+    private bool canJump = true;
+    private bool jump = false;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        m_Rigidbody = GetComponent<Rigidbody>();
+
+        if (lvl == null || lvl.Equals(default(LevelScript)))
+        {
+            Component[] temp = GameObject.Find("LevelMaster").GetComponents(typeof(Component));
+            foreach (Component c in temp)
+            {
+                if (c is LevelScript)
+                {
+                    lvl = c as LevelScript;
+                    break;
+                }
+            }
+        }
+    }
 
     // Update is called once per frame
     void Update()
     {
-        /// Movement
         float x = 0.0f, z = 0.0f;
+
+        // Check for input // Convert to getaxes
+        //if (Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S))
+        //    z += 1.0f;
+        //else if (Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.W))
+        //    z += -1.0f;
+
         if (Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow))
             x += -1.0f;
         else if (Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.LeftArrow))
@@ -51,5 +82,26 @@ public class PlayerController2 : PlayerController
             GameObject t = Instantiate(physicsBlock);
             //t.GetComponent<ShortTree>().Spawn(this.transform.position + new Vector3(1.5f, -0.5f, 0f), new Vector3(-lvl.GetOffset(), 0f, 0f));
         }
+    }
+
+    private void Move()
+    {
+        m_Rigidbody.velocity = new Vector3(move.x, m_Rigidbody.velocity.y, move.z);
+        if (jump)
+        {
+            print("jumping");
+            m_Rigidbody.AddForce(Vector3.up * 300.0f);
+            jump = false;
+        }
+    }
+
+    public void ResetJump()
+    {
+        canJump = true;
+    }
+
+    public void Die()
+    {
+        Destroy(this);
     }
 }
