@@ -8,6 +8,8 @@ public class PlayerController1 : PlayerController
     [SerializeField] private GameObject shortTreePrefab;
     [SerializeField] private GameObject vinePrefab;
     [SerializeField] private GameObject bbushPrefab;
+    [SerializeField] private Animator anim;
+    [SerializeField] private Transform skelTransform;
 
     // Update is called once per frame
     void Update()
@@ -15,9 +17,35 @@ public class PlayerController1 : PlayerController
         /// Movement
         float x = 0.0f, z = 0.0f;
         if (Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
+        {
+            
             x += -1.0f;
+        }
         else if (Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A))
+        {
             x += 1.0f;
+        }
+
+        if (x != 0)
+        {
+            if (x < 0)
+            {
+                // anim left
+                anim.SetBool("walking", true);
+                skelTransform.rotation = Quaternion.Euler(0, 270f, 0);
+            }
+            else if (x > 0)
+            {
+                // anim right
+                anim.SetBool("walking", true);
+                skelTransform.rotation = Quaternion.Euler(0, 90f, 0);
+            }
+        }
+        else
+        {
+            anim.SetBool("walking", false);
+        }
+
         if (canJump && Input.GetKeyDown(KeyCode.Space))
         {
             // jump
