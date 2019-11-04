@@ -2057,6 +2057,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!4 &1337051838 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5987353077968363566, guid: 3c1362ee6bc835846a84488d48236ac8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1373558152}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1373558152
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3415,6 +3421,95 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1001 &2083752883
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1337051838}
+    m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 0d2f29b82aad2af4ca8d42db2946e513,
+        type: 3}
+      propertyPath: m_Name
+      value: bckground test
+      objectReference: {fileID: 0}
+    - target: {fileID: -3985648744358361281, guid: 0d2f29b82aad2af4ca8d42db2946e513,
+        type: 3}
+      propertyPath: m_Name
+      value: moutain
+      objectReference: {fileID: 0}
+    - target: {fileID: -207019728207328739, guid: 0d2f29b82aad2af4ca8d42db2946e513,
+        type: 3}
+      propertyPath: m_Name
+      value: water
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0d2f29b82aad2af4ca8d42db2946e513,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 47.24579
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0d2f29b82aad2af4ca8d42db2946e513,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.222242
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0d2f29b82aad2af4ca8d42db2946e513,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 139.4
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0d2f29b82aad2af4ca8d42db2946e513,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0d2f29b82aad2af4ca8d42db2946e513,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0d2f29b82aad2af4ca8d42db2946e513,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0d2f29b82aad2af4ca8d42db2946e513,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0d2f29b82aad2af4ca8d42db2946e513,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0d2f29b82aad2af4ca8d42db2946e513,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0d2f29b82aad2af4ca8d42db2946e513,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 0d2f29b82aad2af4ca8d42db2946e513,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7689642667243399276, guid: 0d2f29b82aad2af4ca8d42db2946e513,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: baef5f06c88dd9145a838316de2dadd6, type: 2}
+    - target: {fileID: 1013831361340151436, guid: 0d2f29b82aad2af4ca8d42db2946e513,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4d6fc11e5f6ed7a4190c9abfd013c244, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0d2f29b82aad2af4ca8d42db2946e513, type: 3}
 --- !u!1 &2108173228
 GameObject:
   m_ObjectHideFlags: 0
