@@ -18,7 +18,6 @@ public class PlayerController1 : PlayerController
         float x = 0.0f, z = 0.0f;
         if (Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
         {
-            
             x += -1.0f;
         }
         else if (Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A))
@@ -50,6 +49,7 @@ public class PlayerController1 : PlayerController
         {
             // jump
             jump = true;
+            anim.SetBool("jumping", true);
         }
         // Update movement vector
         move.x = x;
@@ -83,5 +83,11 @@ public class PlayerController1 : PlayerController
                 t.GetComponent<ShortTree>().Spawn(this.transform.position + new Vector3(1.5f, -0.5f, 0f), new Vector3(lvl.GetOffset(), 0f, 0f));
             }
         }
+    }
+
+    public override void ResetJump()
+    {
+        anim.SetBool("jumping", false);
+        canJump = true;
     }
 }

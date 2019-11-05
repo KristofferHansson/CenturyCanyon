@@ -1,17 +1,12 @@
 fileFormatVersion: 2
-guid: 84fedaa6fd09a5b4da6324a740f9b1ea
+guid: 9520355740d381f4db59273b784cfafd
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: Idle
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: initialShadingGroup
-    second: {fileID: 2100000, guid: f2d0ba8c844101649af8d50ec9c9fc76, type: 2}
+    second: Running
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
@@ -40,11 +35,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Idle
+      name: Running
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0
-      lastFrame: 65
+      lastFrame: 21
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

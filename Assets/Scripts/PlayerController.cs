@@ -63,7 +63,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void ResetJump()
+    public virtual void ResetJump()
     {
         canJump = true;
     }

@@ -434,7 +434,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 119696884}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.17840758, y: -17.43, z: -0.11641312}
+  m_LocalPosition: {x: -0.17840758, y: -17.68, z: -0.11641312}
   m_LocalScale: {x: 17.194725, y: 21.608458, z: 1.2168}
   m_Children: []
   m_Father: {fileID: 1697056737}
@@ -2536,7 +2536,7 @@ MonoBehaviour:
   futureOnly: {fileID: 1237501333}
   player1Prefab: {fileID: 1320151135485395252, guid: 07042a0f7c9d33944ba3d27ec77a68dd,
     type: 3}
-  player2Prefab: {fileID: 7404387838094300757, guid: 7152fcdbc4a86fd4096bbffb6d75dcd4,
+  player2Prefab: {fileID: 1656180791147924848, guid: c496a8fbc13ed8e439819b65a8e17d06,
     type: 3}
   spawnPoint: {fileID: 1090786032}
   ui: {fileID: 0}
