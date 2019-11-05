@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2614220643481003126}
   - component: {fileID: 2614220643481003125}
   m_Layer: 0
-  m_Name: FVine
+  m_Name: Vine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd2a1d6a23256444192fea907403f6a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberOfSegments: 10
-  segmentPrefab: {fileID: 3225533212622085456, guid: 320d38f5eaf846f4d88f7e458dfb72ad,
+  numberOfSegments: 3
+  segmentPrefab: {fileID: 3225533212622085456, guid: acd090c7e140a3546805f03419315191,
     type: 3}
-  offset: 1.05
+  offset: 2.1

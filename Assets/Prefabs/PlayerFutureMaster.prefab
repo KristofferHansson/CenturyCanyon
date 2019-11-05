@@ -67,7 +67,8 @@ MonoBehaviour:
   move_Speed: 10
   thrustBlock: {fileID: 2353032783166340931, guid: 1bc821a0bbb4b3746ac4e7330817c660,
     type: 3}
-  physicsBlock: {fileID: 0}
+  physicsBlock: {fileID: 2353032783166340931, guid: 4e4402b2bdc01984bb3f6f58454ac519,
+    type: 3}
   anim: {fileID: 6614366368390170239}
   skelTransform: {fileID: 3837331775772388101}
 --- !u!1 &2534714889805675286
@@ -377,11 +378,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: FutureGirl@Idle
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: 409d3c57116862d43b31fe2df8993553,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 5a474d2b615525f4583eefa8149347f8, type: 2}
     - target: {fileID: -4216859302048453862, guid: 409d3c57116862d43b31fe2df8993553,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -452,6 +448,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.4
       objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 409d3c57116862d43b31fe2df8993553,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 5a474d2b615525f4583eefa8149347f8, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 409d3c57116862d43b31fe2df8993553, type: 3}
 --- !u!4 &3837331775772388101 stripped
