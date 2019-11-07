@@ -29,14 +29,14 @@ public class PlayerController2 : PlayerController
                 // anim left
                 anim.SetBool("walking", true);
                 skelTransform.rotation = Quaternion.Euler(0, 270f, 0);
-		lastRight = false;
+		        lastRight = false;
             }
             else if (x > 0)
             {
                 // anim right
                 anim.SetBool("walking", true);
                 skelTransform.rotation = Quaternion.Euler(0, 90f, 0);
-		lastRight = false;
+		        lastRight = true;
             }
         }
         else
@@ -71,10 +71,10 @@ public class PlayerController2 : PlayerController
         if (Input.GetKeyDown(KeyCode.Keypad0)) // short tree
         {
             GameObject t = Instantiate(thrustBlock);
-		if (lastRight)
-         	   t.GetComponent<ThrustBlockMaster>().Spawn(this.transform.position + new Vector3(1.5f, -0.5f, 0f), new Vector3(-lvl.GetOffset(), 0f, 0f));
-		else
-		  t.GetComponent<ThrustBlockMaster>().Spawn(this.transform.position + new Vector3(-1.5f, -0.5f, 0f), new Vector3(-lvl.GetOffset(), 0f, 0f));
+            if (lastRight)
+                t.GetComponent<ThrustBlockMaster>().Spawn(this.transform.position + new Vector3(1.5f, -0.5f, 0f), new Vector3(-lvl.GetOffset(), 0f, 0f));
+            else
+                t.GetComponent<ThrustBlockMaster>().Spawn(this.transform.position + new Vector3(-1.5f, -0.5f, 0f), new Vector3(-lvl.GetOffset(), 0f, 0f));
         }
         else if (Input.GetKeyDown(KeyCode.Keypad1)) // vine
         {

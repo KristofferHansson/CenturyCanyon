@@ -34,14 +34,14 @@ public class PlayerController1 : PlayerController
                 // anim left
                 anim.SetBool("walking", true);
                 skelTransform.rotation = Quaternion.Euler(0, 270f, 0);
-		lastRight = false;
+		        lastRight = false;
             }
             else if (x > 0)
             {
                 // anim right
                 anim.SetBool("walking", true);
                 skelTransform.rotation = Quaternion.Euler(0, 90f, 0);
-		lastRight = true;
+		        lastRight = true;
             }
         }
         else
@@ -71,23 +71,26 @@ public class PlayerController1 : PlayerController
         if (canJump)
         {
             /// Other actions
+            GameObject t = null;
             if (Input.GetKeyDown(KeyCode.E)) // short tree
             {
-                GameObject t = Instantiate(shortTreePrefab);
-		if (lastRight)
-	                t.GetComponent<ShortTree>().Spawn(this.transform.position + new Vector3(1.5f, -0.5f, 0f), new Vector3(lvl.GetOffset(), 0f, 0f));
-		else
-			t.GetComponent<ShortTree>().Spawn(this.transform.position + new Vector3(-1.5f, -0.5f, 0f), new Vector3(lvl.GetOffset(), 0f, 0f));
+                t = Instantiate(shortTreePrefab);
             }
             else if (Input.GetKeyDown(KeyCode.Q)) // vine
             {
-                GameObject t = Instantiate(vinePrefab);
-                t.GetComponent<ShortTree>().Spawn(this.transform.position + new Vector3(1.5f, -0.5f, 0f), new Vector3(lvl.GetOffset(), 0f, 0f));
+                t = Instantiate(vinePrefab);
             }
             else if (Input.GetKeyDown(KeyCode.R)) // vine
             {
-                GameObject t = Instantiate(bbushPrefab);
-                t.GetComponent<ShortTree>().Spawn(this.transform.position + new Vector3(1.5f, -0.5f, 0f), new Vector3(lvl.GetOffset(), 0f, 0f));
+                t = Instantiate(bbushPrefab);
+            }
+
+            if (!(t is null))
+            {
+                if (lastRight)
+                    t.GetComponent<ShortTree>().Spawn(this.transform.position + new Vector3(1.5f, -0.5f, 0f), new Vector3(lvl.GetOffset(), 0f, 0f));
+                else
+                    t.GetComponent<ShortTree>().Spawn(this.transform.position + new Vector3(-1.5f, -0.5f, 0f), new Vector3(lvl.GetOffset(), 0f, 0f));
             }
         }
     }
