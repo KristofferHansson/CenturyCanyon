@@ -6,25 +6,27 @@ public class BoulderSpawn : MonoBehaviour
 {
 
     private Vector3 Startpos;
-    public GameObject water;
+    //private GameObject water;
 
     private Rigidbody boulder;
+    public GameObject nextBoulder;
     
     
     // Start is called before the first frame update
     void Start()
     {
         Startpos = this.gameObject.transform.position;
+        //water = GameObject.Find("WaterKill");
     }
         
         
     void OnTriggerEnter(Collider col)
     {
  
-        if (water.gameObject == col.gameObject)
+        if (col.tag == "Water")
         {
-            transform.position = Startpos;
-            boulder.velocity = Vector3.zero;
+            Instantiate(nextBoulder, Startpos, new Quaternion(0, 0, 0, 0));
+            Destroy(this.gameObject);
         }
     }
 

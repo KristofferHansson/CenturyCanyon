@@ -160,7 +160,7 @@ Camera:
     y: 0.5
     width: 1
     height: 0.5
-  near clip plane: 0.3
+  near clip plane: -3.54
   far clip plane: 1000
   field of view: 60
   orthographic: 1
@@ -406,16 +406,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6053204971949795404}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 84fedaa6fd09a5b4da6324a740f9b1ea,
-        type: 3}
-      propertyPath: m_Name
-      value: PastChar02@Idle
-      objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: 84fedaa6fd09a5b4da6324a740f9b1ea,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 0ef273f8e831f8e48b909a0562923147, type: 2}
     - target: {fileID: -4216859302048453862, guid: 84fedaa6fd09a5b4da6324a740f9b1ea,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -485,6 +475,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 84fedaa6fd09a5b4da6324a740f9b1ea,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 0ef273f8e831f8e48b909a0562923147, type: 2}
+    - target: {fileID: -927199367670048503, guid: 84fedaa6fd09a5b4da6324a740f9b1ea,
+        type: 3}
+      propertyPath: m_Name
+      value: PastChar02@Idle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84fedaa6fd09a5b4da6324a740f9b1ea, type: 3}
