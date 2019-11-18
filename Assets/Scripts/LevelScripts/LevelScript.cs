@@ -26,10 +26,9 @@ public class LevelScript : MonoBehaviour
 
         offset = waterBox.GetComponent<Renderer>().bounds.extents.magnitude * 2 + 100;
 
-        GameObject p2Map = Instantiate(pastAndFuture);
-        p2Map.transform.position = pastAndFuture.transform.position + new Vector3(offset, 0.0f, 0.0f);
+        GameObject p2Map = Instantiate(pastAndFuture, pastAndFuture.transform.position + new Vector3(offset, 0.0f, 0.0f), Quaternion.identity);
 
-        futureOnly.transform.position = pastAndFuture.transform.position + new Vector3(offset, 0.0f, 0.0f);
+        futureOnly.transform.position += new Vector3(offset, 0.0f, 0.0f);
 
         p1 = Instantiate(player1Prefab);
         p1.transform.position = spawnPoint.position;
