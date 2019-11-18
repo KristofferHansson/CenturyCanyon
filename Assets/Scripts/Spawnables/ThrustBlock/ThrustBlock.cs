@@ -27,7 +27,8 @@ public class ThrustBlock : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<Rigidbody>().AddForce(movement);
+        //GetComponent<Rigidbody>().AddForce(force * movement * Time.deltaTime);
+        GetComponent<Rigidbody>().velocity = force * movement;
     }
 
     private void setMovement()
@@ -36,22 +37,22 @@ public class ThrustBlock : MonoBehaviour
 
         if (direction == "UP")
         {
-            movement.y = 1 * force;
+            movement.y = 1;
         }
 
         if (direction == "DOWN")
         {
-            movement.y = -1 * force;
+            movement.y = -1;
         }
 
         if (direction == "RIGHT")
         {
-            movement.z = -1 * force;
+            movement.z = -1;
         }
 
         if (direction == "LEFT")
         {
-            movement.z = 1 * force;
+            movement.z = 1;
         }
 
         Invoke("stopMovement", movementDuration);
@@ -60,7 +61,7 @@ public class ThrustBlock : MonoBehaviour
 
     private void stopMovement()
     {
-        movement = Vector3.zero;
+        //movement = Vector3.zero;
         Invoke("selfDestruct", destructionCountdown);
         GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
     }
