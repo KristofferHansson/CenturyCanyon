@@ -78,7 +78,11 @@ public class PlayerController1 : PlayerController
             }
             else if (Input.GetKeyDown(KeyCode.Q)) // vine
             {
-                t = Instantiate(vinePrefab);
+                if (ResourceManagerPast.Instance.GetNumberOf("vine") > 0)
+                {
+                    t = Instantiate(vinePrefab);
+                    ResourceManagerPast.Instance.Use("vine");
+                }
             }
             else if (Input.GetKeyDown(KeyCode.R)) // vine
             {

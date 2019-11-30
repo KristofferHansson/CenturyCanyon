@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 6053204971949795404}
   - component: {fileID: 8821813078396869280}
   - component: {fileID: 1243862896833891917}
+  - component: {fileID: 879262509524808983}
   m_Layer: 0
   m_Name: PlayerPastMaster
   m_TagString: Untagged
@@ -104,6 +105,19 @@ MonoBehaviour:
     type: 3}
   anim: {fileID: 6222715921313207040}
   skelTransform: {fileID: 4094199670675226234}
+--- !u!114 &879262509524808983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320151135485395252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c42fa7bdf1940074a8d4afc734e72d20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ui: {fileID: 0}
 --- !u!1 &2847660427559548754
 GameObject:
   m_ObjectHideFlags: 0
@@ -407,11 +421,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2847660427559548751}
     m_Modifications:
-    - target: {fileID: 8008991160940562688, guid: 2fff0207b11e5754d83bb4b0c1ff539f,
-        type: 3}
-      propertyPath: m_Name
-      value: BGSprite
-      objectReference: {fileID: 0}
     - target: {fileID: 8008991160940562815, guid: 2fff0207b11e5754d83bb4b0c1ff539f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -466,6 +475,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8008991160940562688, guid: 2fff0207b11e5754d83bb4b0c1ff539f,
+        type: 3}
+      propertyPath: m_Name
+      value: BGSprite
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fff0207b11e5754d83bb4b0c1ff539f, type: 3}

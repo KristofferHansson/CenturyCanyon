@@ -8,6 +8,7 @@ public class UIMiddleman : MonoBehaviour
 {
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private GameObject levelCompletePanel;
+    [SerializeField] private Text vineCountText;
 
     // Start is called before the first frame update
     void Start()
@@ -16,10 +17,10 @@ public class UIMiddleman : MonoBehaviour
         levelCompletePanel.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetVineCount(int num)
     {
-        
+        if (vineCountText != null)
+            vineCountText.text = num.ToString();
     }
 
     public void ShowEndGamePanel()
