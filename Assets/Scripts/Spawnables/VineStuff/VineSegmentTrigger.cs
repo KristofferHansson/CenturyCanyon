@@ -19,6 +19,7 @@ public class VineSegmentTrigger : MonoBehaviour
                 HingeJoint hj = player.AddComponent<HingeJoint>();
                 hj.connectedBody = this.GetComponent<Rigidbody>();
             }
+            pc.VineEntered();
         }
     }
 

@@ -10,8 +10,10 @@ public class PlayerController : MonoBehaviour
     protected bool canJump = true;
     protected bool jump = false;
 
+    private int vineCt = 0;
     private bool inVine = false; // in vine collision (can be true while !onVine or onVine)
     private bool onVine = false; // attached to vine
+    private float lastReleasedVine = 0.0f;
     private VineSegmentTrigger vineSeg = null;
 
     private bool isUnderwater = false;
@@ -44,6 +46,7 @@ public class PlayerController : MonoBehaviour
             {
                 // release player from vine
                 vineSeg.ReleasePlayer();
+                lastReleasedVine = Time.time;
                 onVine = false;
                 return;
             }
@@ -89,12 +92,22 @@ public class PlayerController : MonoBehaviour
 
     public bool IsInVine()
     {
-        return inVine;
+        return (inVine && (Time.time - lastReleasedVine > 0.1f));
+    }
+
+    public void VineEntered()
+    {
+        vineCt++;
     }
 
     public void VineExited()
     {
-        inVine = false;
+        vineCt--;
+        if (vineCt < 1)
+        {
+            lastReleasedVine = Time.time;
+            inVine = false;
+        }
     }
 
     public void SetUnderwater(bool tf)

@@ -9,6 +9,8 @@ public class UIMiddleman : MonoBehaviour
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private GameObject levelCompletePanel;
     [SerializeField] private Text vineCountText;
+    [SerializeField] private Text treeCountText;
+    [SerializeField] private Text bushCountText;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +23,16 @@ public class UIMiddleman : MonoBehaviour
     {
         if (vineCountText != null)
             vineCountText.text = num.ToString();
+    }
+    public void SetTreeCount(int num)
+    {
+        if (treeCountText != null)
+            treeCountText.text = num.ToString();
+    }
+    public void SetBushCount(int num)
+    {
+        if (bushCountText != null)
+            bushCountText.text = num.ToString();
     }
 
     public void ShowEndGamePanel()

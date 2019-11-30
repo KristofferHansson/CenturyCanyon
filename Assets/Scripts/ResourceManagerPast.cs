@@ -43,10 +43,12 @@ public class ResourceManagerPast : MonoBehaviour
         else if (item.Equals("tree"))
         {
             trees += number;
+            ui.SetTreeCount(Instance.GetNumberOf("tree"));
         }
-        else if (item.Equals("bouncingBush"))
+        else if (item.Equals("bush"))
         {
             bouncingBushes += number;
+            ui.SetBushCount(Instance.GetNumberOf("bush"));
         }
     }
 
@@ -61,7 +63,7 @@ public class ResourceManagerPast : MonoBehaviour
         {
             return trees;
         }
-        else if (item.Equals("bouncingBush"))
+        else if (item.Equals("bush"))
         {
             return bouncingBushes;
         }
@@ -80,7 +82,7 @@ public class ResourceManagerPast : MonoBehaviour
         {
             trees--;
         }
-        else if (item.Equals("bouncingBush"))
+        else if (item.Equals("bush"))
         {
             bouncingBushes--;
         }

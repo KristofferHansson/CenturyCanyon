@@ -91,7 +91,11 @@ public class PlayerController1 : PlayerController
             }
             else if (Input.GetKeyDown(KeyCode.R)) // bbush
             {
-                t = Instantiate(bbushPrefab);
+                if (ResourceManagerPast.Instance.GetNumberOf("bush") > 0)
+                {
+                    t = Instantiate(bbushPrefab);
+                    ResourceManagerPast.Instance.Use("bush");
+                }
             }
 
             if (!(t is null))

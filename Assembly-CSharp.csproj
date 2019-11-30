@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\LevelScripts\LevelScript.cs" />
     <Compile Include="Assets\Scripts\PColliderEnter.cs" />
     <Compile Include="Assets\Scripts\PColliderEnter2.cs" />
+    <Compile Include="Assets\Scripts\Pickups\BBushPickup.cs" />
     <Compile Include="Assets\Scripts\Pickups\ShortTreePickup.cs" />
     <Compile Include="Assets\Scripts\Pickups\VinePickup.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
