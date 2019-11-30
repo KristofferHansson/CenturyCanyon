@@ -74,7 +74,12 @@ public class PlayerController1 : PlayerController
             GameObject t = null;
             if (Input.GetKeyDown(KeyCode.E)) // short tree
             {
-                t = Instantiate(shortTreePrefab);
+                //t = Instantiate(shortTreePrefab);
+                if (ResourceManagerPast.Instance.GetNumberOf("tree") > 0)
+                {
+                    t = Instantiate(shortTreePrefab);
+                    ResourceManagerPast.Instance.Use("tree");
+                }
             }
             else if (Input.GetKeyDown(KeyCode.Q)) // vine
             {
@@ -84,7 +89,7 @@ public class PlayerController1 : PlayerController
                     ResourceManagerPast.Instance.Use("vine");
                 }
             }
-            else if (Input.GetKeyDown(KeyCode.R)) // vine
+            else if (Input.GetKeyDown(KeyCode.R)) // bbush
             {
                 t = Instantiate(bbushPrefab);
             }

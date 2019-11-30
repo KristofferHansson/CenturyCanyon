@@ -4548,6 +4548,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOverPanel: {fileID: 5762453090149550205}
   levelCompletePanel: {fileID: 5762453090865817188}
+  vineCountText: {fileID: 0}
 --- !u!1 &5762453091642457387
 GameObject:
   m_ObjectHideFlags: 0
@@ -4573,7 +4574,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5762453091692320240}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.050371855, y: 0.15103054, z: 3.22}
+  m_LocalPosition: {x: -0.050371855, y: 20.5, z: 3.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5762453092160176382}
