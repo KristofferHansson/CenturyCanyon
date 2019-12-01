@@ -92,7 +92,7 @@ public class PlayerController : MonoBehaviour
 
     public bool IsInVine()
     {
-        return (inVine && (Time.time - lastReleasedVine > 0.1f));
+        return (vineCt > 0);// && (Time.time - lastReleasedVine <= 0.1f));
     }
 
     public void VineEntered()
