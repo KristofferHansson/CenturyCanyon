@@ -11,7 +11,6 @@ public class PlayerController : MonoBehaviour
     protected bool jump = false;
 
     private int vineCt = 0;
-    private bool inVine = false; // in vine collision (can be true while !onVine or onVine)
     private bool onVine = false; // attached to vine
     private float lastReleasedVine = 0.0f;
     private VineSegmentTrigger vineSeg = null;
@@ -81,7 +80,6 @@ public class PlayerController : MonoBehaviour
     {
         this.vineSeg = vineSeg;
         onVine = true;
-        inVine = true;
         canJump = true;
     }
 
@@ -106,7 +104,6 @@ public class PlayerController : MonoBehaviour
         if (vineCt < 1)
         {
             lastReleasedVine = Time.time;
-            inVine = false;
         }
     }
 
