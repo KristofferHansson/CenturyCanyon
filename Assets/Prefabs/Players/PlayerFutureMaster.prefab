@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5812102065122386952}
   - component: {fileID: 9134585992829769444}
   - component: {fileID: 3742828074925279338}
+  - component: {fileID: 5696020564485510311}
   m_Layer: 0
   m_Name: PlayerFutureMaster
   m_TagString: Untagged
@@ -71,6 +72,19 @@ MonoBehaviour:
     type: 3}
   anim: {fileID: 6614366368390170239}
   skelTransform: {fileID: 3837331775772388101}
+--- !u!114 &5696020564485510311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656180791147924848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17bdc188f446042408e013bbc260aa84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ui: {fileID: 0}
 --- !u!1 &2534714889805675286
 GameObject:
   m_ObjectHideFlags: 0
