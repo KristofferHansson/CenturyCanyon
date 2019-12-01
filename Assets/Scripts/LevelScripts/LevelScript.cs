@@ -15,8 +15,7 @@ public class LevelScript : MonoBehaviour
     protected GameObject p1;
     protected GameObject p2;
     protected float offset;
-    protected bool player1InLadder = false;
-    protected bool player2InLadder = false;
+    protected int playersInLadder = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -45,8 +44,6 @@ public class LevelScript : MonoBehaviour
     // When one of the players dies
     public void ReportFailure()
     {
-        print(player1InLadder);
-        print(player2InLadder);
         ui.ShowEndGamePanel();
 
         if (!(p1 is null))
@@ -69,26 +66,19 @@ public class LevelScript : MonoBehaviour
     }
 
     // Player enters end-level trigger
-    public void PlayerIn(bool player1)
+    public void PlayerIn()
     {
-        if (player1)
-            player1InLadder = true;
-        else
-            player2InLadder = true;
-
-        if (player1InLadder && player2InLadder)
+        playersInLadder++;
+        if (playersInLadder >= 2)
         {
             LevelComplete();
         }
     }
 
     // Player exits end-level trigger
-    public void PlayerOut(bool player1)
+    public void PlayerOut()
     {
-        if (player1)
-            player1InLadder = false;
-        else
-            player2InLadder = false;
+        playersInLadder--;
     }
 
     public void LevelComplete()

@@ -6,18 +6,6 @@ public class WaterKill : MonoBehaviour
 {
     [SerializeField] private LevelScript lvl;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void OnTriggerEnter(Collider other)
     {
         bool playerIn = false;

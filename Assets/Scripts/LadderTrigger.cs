@@ -8,24 +8,16 @@ public class LadderTrigger : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name.Equals("P1Capsule"))
+        if (other.gameObject.name.Equals("P1Capsule") || other.gameObject.name.Equals("P2Capsule"))
         {
-            lvl.PlayerIn(true);
-        }
-        else if (other.gameObject.name.Equals("P2Capsule"))
-        {
-            lvl.PlayerIn(false);
+            lvl.PlayerIn();
         }
     }
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.name.Equals("P1Capsule"))
+        if (other.gameObject.name.Equals("P1Capsule") || other.gameObject.name.Equals("P2Capsule"))
         {
-            lvl.PlayerOut(true);
-        }
-        else if (other.gameObject.name.Equals("P2Capsule"))
-        {
-            lvl.PlayerOut(false);
+            lvl.PlayerOut();
         }
     }
 }
