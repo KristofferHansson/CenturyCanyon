@@ -9,7 +9,7 @@ public class VinePickup : MonoBehaviour
         if (other.gameObject.name.Equals("P1Capsule"))
         {
             ResourceManagerPast.Instance.PickUp("vine");
-            Destroy(this.gameObject.transform.parent.gameObject, 0.2f);
+            Destroy(this.gameObject.transform.parent.gameObject, 0.05f);
         }
     }
 }

@@ -9,7 +9,7 @@ public class ShortTreePickup : MonoBehaviour
         if (other.gameObject.name.Equals("P1Capsule"))
         {
             ResourceManagerPast.Instance.PickUp("tree");
-            Destroy(this.gameObject.transform.parent.gameObject, 0.2f);
+            Destroy(this.gameObject.transform.parent.gameObject, 0.05f);
         }
     }
 }
