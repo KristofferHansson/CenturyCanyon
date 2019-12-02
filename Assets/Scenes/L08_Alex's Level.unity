@@ -2675,7 +2675,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1622fade741e95c409fc33b2c50ea337, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b37303e520e5a684cb9c71c494f81d9b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.1
   m_Pitch: 1
@@ -6646,11 +6646,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1854895981}
     m_Modifications:
-    - target: {fileID: 7975854241720933324, guid: f6e45ee2a23c17c4dac09bec74886777,
-        type: 3}
-      propertyPath: m_Name
-      value: UIPanel (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 7975854241720933325, guid: f6e45ee2a23c17c4dac09bec74886777,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6755,6 +6750,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7975854241720933324, guid: f6e45ee2a23c17c4dac09bec74886777,
+        type: 3}
+      propertyPath: m_Name
+      value: UIPanel (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6e45ee2a23c17c4dac09bec74886777, type: 3}
