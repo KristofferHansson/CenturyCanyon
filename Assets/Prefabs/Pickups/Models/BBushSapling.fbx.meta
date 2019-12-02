@@ -3,7 +3,17 @@ guid: dac7797a7020c5442968b1d405f5688f
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PotMat
+    second: {fileID: 2100000, guid: 570b4044fe81b2642a26432a33a8986b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StemMat
+    second: {fileID: 2100000, guid: deadeb694b0984f4b8599ea1468b0ceb, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
