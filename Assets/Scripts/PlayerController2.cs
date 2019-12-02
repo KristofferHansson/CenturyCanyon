@@ -84,8 +84,17 @@ public class PlayerController2 : PlayerController
         }
         else if (Input.GetKeyDown(KeyCode.Keypad1)) // black hole
         {
-            //GameObject t = Instantiate(blackHole);
-            //t.GetComponent<ShortTree>().Spawn(this.transform.position + new Vector3(1.5f, -0.5f, 0f), new Vector3(-lvl.GetOffset(), 0f, 0f));
+            GameObject t = null;
+
+            if (ResourceManagerFuture.Instance.GetEnergy() > 0)
+            {
+                ResourceManagerFuture.Instance.Use();
+                t = Instantiate(blackHole);
+                if (lastRight)
+                    t.GetComponent<ThrustBlockMaster>().Spawn(this.transform.position + new Vector3(1.5f, -0.5f, 0f), new Vector3(-lvl.GetOffset(), 0f, 0f));
+                else
+                    t.GetComponent<ThrustBlockMaster>().Spawn(this.transform.position + new Vector3(-1.5f, -0.5f, 0f), new Vector3(-lvl.GetOffset(), 0f, 0f));
+            }
         }
     }
 
