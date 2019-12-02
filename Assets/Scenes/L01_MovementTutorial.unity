@@ -1491,7 +1491,7 @@ GameObject:
   - component: {fileID: 1346273767}
   - component: {fileID: 1346273766}
   m_Layer: 0
-  m_Name: GrappleJumpText (1)
+  m_Name: LadderText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2081,7 +2081,7 @@ PrefabInstance:
     - target: {fileID: 3780247374695527480, guid: fa6a5e5851489da478c1c605fd5abd9a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.45
+      value: -11.09
       objectReference: {fileID: 0}
     - target: {fileID: 3780247374695527480, guid: fa6a5e5851489da478c1c605fd5abd9a,
         type: 3}
@@ -2500,7 +2500,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5762453092248913911}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.38, y: -2.41, z: -0.0028362274}
+  m_LocalPosition: {x: -9.12, y: -2.41, z: -0.0028362274}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5762453091647099641}
