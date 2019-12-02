@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd2a1d6a23256444192fea907403f6a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberOfSegments: 10
+  numberOfSegments: 11
   segmentPrefab: {fileID: 3225533212622085456, guid: 320d38f5eaf846f4d88f7e458dfb72ad,
     type: 3}
   offset: 1.05

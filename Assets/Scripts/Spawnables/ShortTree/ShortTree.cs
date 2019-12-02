@@ -11,12 +11,14 @@ public class ShortTree : MonoBehaviour, ISpawnable
     {
         //past.transform.position = positionInPast;
         //future.transform.position = positionInPast + offset;
-        GameObject t1 = Instantiate(pastPrefab, positionInPast, Quaternion.identity);
-        GameObject t2 = Instantiate(futurePrefab, positionInPast + offset, Quaternion.identity);
+
+        Quaternion rot = Quaternion.identity;
         if (!facesRight)
         {
-            t1.transform.Rotate(new Vector3(0f, 180f, 0f));
-            t2.transform.Rotate(new Vector3(0f, 180f, 0f));
+            rot = Quaternion.Euler(0f, 180f, 0f);
         }
+
+        GameObject t1 = Instantiate(pastPrefab, positionInPast, rot);
+        GameObject t2 = Instantiate(futurePrefab, positionInPast + offset, rot);
     }
 }
