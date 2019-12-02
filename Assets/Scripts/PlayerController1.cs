@@ -105,7 +105,7 @@ public class PlayerController1 : PlayerController
                 if (lastRight)
                     t.GetComponent<ShortTree>().Spawn(this.transform.position + new Vector3(1.5f, yOffset, 0f), new Vector3(lvl.GetOffset(), 0f, 0f));
                 else
-                    t.GetComponent<ShortTree>().Spawn(this.transform.position + new Vector3(-1.5f, -yOffset, 0f), new Vector3(lvl.GetOffset(), 0f, 0f));
+                    t.GetComponent<ShortTree>().Spawn(this.transform.position + new Vector3(-1.5f, yOffset, 0f), new Vector3(lvl.GetOffset(), 0f, 0f));
             }
         }
     }
