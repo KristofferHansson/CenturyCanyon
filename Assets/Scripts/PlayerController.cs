@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     protected Vector3 move;
     protected bool canJump = true;
     protected bool jump = false;
+    [SerializeField] protected Collider jumpResetter;
 
     private int vineCt = 0;
     private bool onVine = false; // attached to vine
@@ -61,13 +62,24 @@ public class PlayerController : MonoBehaviour
                 m_Rigidbody.AddForce(Vector3.up * 300.0f);
                 jump = false;
                 canJump = false;
+                jumpResetter.enabled = false;
+                Invoke("EnableJumpResetter", 0.2f);
             }
         }
+    }
+    private void EnableJumpResetter()
+    {
+        jumpResetter.enabled = true;
     }
 
     public virtual void ResetJump()
     {
         canJump = true;
+    }
+
+    public bool CanJump()
+    {
+        return canJump;
     }
 
     public void Die()

@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bab73695f1dcc0449bf1005a6c66d3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpResetter: {fileID: 1901484904733321941}
   move_Speed: 10
   shortTreePrefab: {fileID: 2339170386175618613, guid: a5ad0dd9c0aebe64e9e0e92f63e1445a,
     type: 3}

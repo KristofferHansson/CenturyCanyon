@@ -6,9 +6,9 @@ public class PColliderEnter : MonoBehaviour
 {
     [SerializeField] private PlayerController1 pc;
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
     {
-        if (!other.gameObject.name.Equals("PCapsule1"))
+        if (!other.isTrigger && !other.gameObject.name.Equals("PCapsule1"))
             pc.ResetJump();
     }
 }

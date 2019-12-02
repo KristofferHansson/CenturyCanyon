@@ -66,6 +66,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56a4fbb58f5fa1041a713e20bd651f83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpResetter: {fileID: 5598330543526097318}
   move_Speed: 10
   thrustBlock: {fileID: 2353032783166340931, guid: 1bc821a0bbb4b3746ac4e7330817c660,
     type: 3}
