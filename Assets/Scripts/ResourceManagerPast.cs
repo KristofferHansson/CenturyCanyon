@@ -81,10 +81,12 @@ public class ResourceManagerPast : MonoBehaviour
         else if (item.Equals("tree"))
         {
             trees--;
+            ui.SetTreeCount(Instance.GetNumberOf("tree"));
         }
         else if (item.Equals("bush"))
         {
             bouncingBushes--;
+            ui.SetBushCount(Instance.GetNumberOf("bush"));
         }
     }
 }

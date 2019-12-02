@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface ISpawnable
 {
-    void Spawn(Vector3 position, Vector3 offset);
+    void Spawn(Vector3 position, Vector3 offset, bool facesRight);
 }

@@ -54,6 +54,11 @@ public class UIMiddleman : MonoBehaviour
         levelCompletePanel.SetActive(true);
     }
 
+    public void EHNextLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
     public void EHRestart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
