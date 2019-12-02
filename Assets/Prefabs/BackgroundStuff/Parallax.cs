@@ -23,7 +23,7 @@ public class Parallax : MonoBehaviour
         {
             l = layers[i];
 
-            l.transform.position += new Vector3(dist * strengths[i], 0, 0);
+            l.transform.position -= new Vector3(dist * strengths[i], 0, 0);
         }
         prevPos = cam.transform.position;
     }
