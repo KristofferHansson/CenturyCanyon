@@ -19,7 +19,7 @@ public class ThrustBlockMaster : MonoBehaviour, ISpawnable
         
     }
 
-    public void Spawn(Vector3 positionInFuture, Vector3 offset)
+    public void Spawn(Vector3 positionInFuture, Vector3 offset, bool facesRight = true)
     {
         future.SetActive(true);
         past.SetActive(true);
