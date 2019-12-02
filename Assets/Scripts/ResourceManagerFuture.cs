@@ -48,5 +48,6 @@ public class ResourceManagerFuture : MonoBehaviour
         energy -= number;
         if (energy < 0)
             energy = 0;
+        ui.SetEnergyCount(Instance.GetEnergy());
     }
 }

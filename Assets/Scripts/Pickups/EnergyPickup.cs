@@ -8,7 +8,7 @@ public class EnergyPickup : MonoBehaviour
     {
         if (other.gameObject.name.Equals("P2Capsule"))
         {
-            ResourceManagerFuture.Instance.PickUp();
+            ResourceManagerFuture.Instance.PickUp(3);
             Destroy(this.gameObject.transform.parent.gameObject, 0.05f);
         }
     }
