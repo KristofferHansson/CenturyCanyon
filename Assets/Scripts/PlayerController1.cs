@@ -71,6 +71,7 @@ public class PlayerController1 : PlayerController
         if (canJump)
         {
             /// Other actions
+            float yOffset = -0.5f;
             GameObject t = null;
             if (Input.GetKeyDown(KeyCode.E)) // short tree
             {
@@ -85,6 +86,7 @@ public class PlayerController1 : PlayerController
             {
                 if (ResourceManagerPast.Instance.GetNumberOf("vine") > 0)
                 {
+                    yOffset = -1f;
                     t = Instantiate(vinePrefab);
                     ResourceManagerPast.Instance.Use("vine");
                 }
@@ -101,9 +103,9 @@ public class PlayerController1 : PlayerController
             if (!(t is null))
             {
                 if (lastRight)
-                    t.GetComponent<ShortTree>().Spawn(this.transform.position + new Vector3(1.5f, -0.5f, 0f), new Vector3(lvl.GetOffset(), 0f, 0f));
+                    t.GetComponent<ShortTree>().Spawn(this.transform.position + new Vector3(1.5f, yOffset, 0f), new Vector3(lvl.GetOffset(), 0f, 0f));
                 else
-                    t.GetComponent<ShortTree>().Spawn(this.transform.position + new Vector3(-1.5f, -0.5f, 0f), new Vector3(lvl.GetOffset(), 0f, 0f));
+                    t.GetComponent<ShortTree>().Spawn(this.transform.position + new Vector3(-1.5f, -yOffset, 0f), new Vector3(lvl.GetOffset(), 0f, 0f));
             }
         }
     }
