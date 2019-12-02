@@ -31,7 +31,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3225533212622085456}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.409, z: 0}
+  m_LocalPosition: {x: 0, y: -0.572, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 7144239773265374878}
@@ -125,7 +125,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 1, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0.5, z: 0}
+  m_ConnectedAnchor: {x: 0, y: 0.09099999, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -185,11 +185,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: vine
       objectReference: {fileID: 0}
-    - target: {fileID: -7178358290650366513, guid: e4599daa3851a2a48903d72dee13fa39,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 4681f6554e4a57d41812d3e85336e438, type: 2}
     - target: {fileID: -4216859302048453862, guid: e4599daa3851a2a48903d72dee13fa39,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -260,6 +255,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.08
       objectReference: {fileID: 0}
+    - target: {fileID: -7178358290650366513, guid: e4599daa3851a2a48903d72dee13fa39,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4681f6554e4a57d41812d3e85336e438, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4599daa3851a2a48903d72dee13fa39, type: 3}
 --- !u!4 &7144239773265374878 stripped

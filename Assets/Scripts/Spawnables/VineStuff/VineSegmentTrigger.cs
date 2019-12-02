@@ -49,6 +49,11 @@ public class VineSegmentTrigger : MonoBehaviour
 
     public void ReleasePlayer()
     {
-        Destroy(player.GetComponent<HingeJoint>());
+        HingeJoint toDestroy = player.GetComponent<HingeJoint>();
+
+        if (toDestroy != null)
+        {
+            Destroy(toDestroy);
+        }
     }
 }
