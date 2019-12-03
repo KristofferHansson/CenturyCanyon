@@ -41,6 +41,11 @@ public class LevelScript : MonoBehaviour
         return offset;
     }
 
+    public void QuitToMenu()
+    {
+        ui.EHQuitToMenu();
+    }
+
     // When one of the players dies
     public void ReportFailure()
     {

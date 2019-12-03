@@ -16,6 +16,11 @@ public class PlayerController1 : PlayerController
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            lvl.QuitToMenu();
+        }
+
         /// Movement
         float x = 0.0f, z = 0.0f;
         if (Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))

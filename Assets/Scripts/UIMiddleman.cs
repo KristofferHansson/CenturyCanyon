@@ -64,6 +64,11 @@ public class UIMiddleman : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+    public void EHQuitToMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
     public void EHQuit()
     {
         Application.Quit();
