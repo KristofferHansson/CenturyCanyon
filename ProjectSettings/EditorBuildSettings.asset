@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/L02_Level_two.unity
     guid: 3a74386c1ae5cfe4e859f172304df82b
   - enabled: 1
-    path: Assets/Scenes/L00_MechanicsTestbed.unity
+    path: Assets/Scenes/L01_TutorialSpawn.unity
     guid: c1467becdd8d08e439b9a2349e96e863
   - enabled: 1
     path: Assets/Scenes/L06_ChrisLevel.unity
