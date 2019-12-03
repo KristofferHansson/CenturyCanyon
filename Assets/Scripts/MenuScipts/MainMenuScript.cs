@@ -7,7 +7,8 @@ public class MainMenuScript : MonoBehaviour
 {
    public void NewGame()
     {
-        SceneManager.LoadScene("L01_VerticalSlice");
+        //SceneManager.LoadScene("L01_VerticalSlice");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void QuitGame()
