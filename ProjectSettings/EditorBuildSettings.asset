@@ -15,11 +15,11 @@ EditorBuildSettings:
     path: Assets/Scenes/L01_TutorialSpawn.unity
     guid: c1467becdd8d08e439b9a2349e96e863
   - enabled: 1
-    path: Assets/Scenes/L06_ChrisLevel.unity
-    guid: bb24d7934a3e77c4e9f627b8c885bca3
-  - enabled: 1
     path: Assets/Scenes/L08_Alex's Level.unity
     guid: a23e79db6d0cae247afac0c50a938d67
+  - enabled: 1
+    path: Assets/Scenes/L06_ChrisLevel.unity
+    guid: bb24d7934a3e77c4e9f627b8c885bca3
   - enabled: 1
     path: Assets/Scenes/L09_Alex's Other Level.unity
     guid: 4cf97985c3c50334bb5546d40498de38

@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
     {
         if (onVine)
         {
-            m_Rigidbody.AddForce(move);
+            m_Rigidbody.AddForce(move * Time.deltaTime * 50f);
             if (jump)
             {
                 // release player from vine

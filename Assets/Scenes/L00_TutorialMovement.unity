@@ -2533,7 +2533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 205ae64ac98d41947a775e237934d62e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  riseRate: 0.001
+  riseRate: 0.06
 --- !u!54 &5762453091910242990
 Rigidbody:
   m_ObjectHideFlags: 0

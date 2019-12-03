@@ -21,14 +21,14 @@ public class ClimbTrigger : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.W))
             {
-                player.transform.position += new Vector3(0f,0.1f,0f);
+                player.transform.position += new Vector3(0f,4f * Time.deltaTime,0f);
             }
         }
         else if (p2In)
         {
             if (Input.GetKey(KeyCode.UpArrow))
             {
-                player.transform.position += new Vector3(0f, 0.1f, 0f);
+                player.transform.position += new Vector3(0f, 4f * Time.deltaTime, 0f);
             }
         }
     }
