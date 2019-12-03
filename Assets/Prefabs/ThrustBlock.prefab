@@ -158,7 +158,7 @@ MonoBehaviour:
   force: 2
   countdown: 3
   movementDuration: 0.8
-  destructionCountdown: 3
+  destructionCountdown: 3.5
 --- !u!54 &95504708719897664
 Rigidbody:
   m_ObjectHideFlags: 0
