@@ -16,18 +16,28 @@ public class MainMenuScript : MonoBehaviour
         Application.Quit();
     }
 
+    public void PlayTutorial()
+    {
+        SceneManager.LoadScene(1);
+    }
+
     public void PlayLevel1()
     {
-        SceneManager.LoadScene("L01_VerticalSlice");
+        SceneManager.LoadScene(2);
     }
 
     public void PlayLevel2()
     {
-        SceneManager.LoadScene("L02_Level_two");
+        SceneManager.LoadScene(3);
     }
 
     public void PlayLevel3()
     {
-        SceneManager.LoadScene("L03_Level3");
+        SceneManager.LoadScene(4);
+    }
+
+    public void PlayLevel4()
+    {
+        SceneManager.LoadScene(5);
     }
 }
