@@ -89,7 +89,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5277997484299285860}
-  - component: {fileID: 5461792194416643259}
+  - component: {fileID: -8222809385855398956}
   m_Layer: 0
   m_Name: BG
   m_TagString: Untagged
@@ -114,7 +114,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5461792194416643259
+--- !u!114 &-8222809385855398956
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,14 +127,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
-  layers:
-  - {fileID: 4450335895992553740}
-  - {fileID: 5159807563427223010}
-  - {fileID: 2951384032534101750}
-  strengths:
-  - 0.05
-  - 0.02
-  - 0
+  layers: []
+  strengths: []
 --- !u!1 &2558824238595308885
 GameObject:
   m_ObjectHideFlags: 0
