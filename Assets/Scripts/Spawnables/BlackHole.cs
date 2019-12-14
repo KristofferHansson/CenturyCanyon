@@ -28,7 +28,7 @@ public class BlackHole : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(this.transform.parent.gameObject, 8f);
+        Destroy(this.gameObject, 8f);
     }
 
     // Update is called once per frame
