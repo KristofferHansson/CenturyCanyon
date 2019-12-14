@@ -4079,7 +4079,7 @@ Light:
   serializedVersion: 9
   m_Type: 1
   m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -5293,6 +5293,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1957493978}
     m_Modifications:
+    - target: {fileID: 3550462556645485298, guid: 0870e1773f4810b4aba5da4e49bade83,
+        type: 3}
+      propertyPath: m_Name
+      value: GrappleEdge (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 6647078894430395307, guid: 0870e1773f4810b4aba5da4e49bade83,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5362,11 +5367,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.0006795
-      objectReference: {fileID: 0}
-    - target: {fileID: 3550462556645485298, guid: 0870e1773f4810b4aba5da4e49bade83,
-        type: 3}
-      propertyPath: m_Name
-      value: GrappleEdge (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0870e1773f4810b4aba5da4e49bade83, type: 3}
@@ -5469,6 +5469,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 284961113}
     m_Modifications:
+    - target: {fileID: 7975854241720933324, guid: f6e45ee2a23c17c4dac09bec74886777,
+        type: 3}
+      propertyPath: m_Name
+      value: UIPanel (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 7975854241720933325, guid: f6e45ee2a23c17c4dac09bec74886777,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5574,11 +5579,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 7975854241720933324, guid: f6e45ee2a23c17c4dac09bec74886777,
-        type: 3}
-      propertyPath: m_Name
-      value: UIPanel (1)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6e45ee2a23c17c4dac09bec74886777, type: 3}
 --- !u!224 &1763068574 stripped
@@ -5670,6 +5670,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 683866072}
     m_Modifications:
+    - target: {fileID: 3550462556645485298, guid: 0870e1773f4810b4aba5da4e49bade83,
+        type: 3}
+      propertyPath: m_Name
+      value: GrappleEdge (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 6647078894430395307, guid: 0870e1773f4810b4aba5da4e49bade83,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5739,11 +5744,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.4765046
-      objectReference: {fileID: 0}
-    - target: {fileID: 3550462556645485298, guid: 0870e1773f4810b4aba5da4e49bade83,
-        type: 3}
-      propertyPath: m_Name
-      value: GrappleEdge (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0870e1773f4810b4aba5da4e49bade83, type: 3}
@@ -6719,6 +6719,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 784788087534758112}
     m_Modifications:
+    - target: {fileID: 3550462556645485298, guid: 0870e1773f4810b4aba5da4e49bade83,
+        type: 3}
+      propertyPath: m_Name
+      value: GrappleEdge (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 6647078894430395307, guid: 0870e1773f4810b4aba5da4e49bade83,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6788,11 +6793,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.4765046
-      objectReference: {fileID: 0}
-    - target: {fileID: 3550462556645485298, guid: 0870e1773f4810b4aba5da4e49bade83,
-        type: 3}
-      propertyPath: m_Name
-      value: GrappleEdge (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0870e1773f4810b4aba5da4e49bade83, type: 3}
