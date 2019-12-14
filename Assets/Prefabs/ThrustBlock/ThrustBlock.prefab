@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 369254675252719275}
   - component: {fileID: 3418513408530305469}
   m_Layer: 0
-  m_Name: BlackHole
+  m_Name: ThrustBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,5 +43,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2df9774e2f1ff9647932e3e986a7525d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  past: {fileID: 3309152066478586451, guid: a591eb540cb78c346aabca375879053a, type: 3}
-  future: {fileID: 1826205930789718431, guid: d2f3303f8213c6a49badd4f56f5d1963, type: 3}
+  past: {fileID: 6919350278896783072, guid: f7c05326647b81c49ac1fb224cd51e12, type: 3}
+  future: {fileID: 4565565308323969509, guid: 59d0ffe3e55042643a5cf6267c4cdd9e, type: 3}

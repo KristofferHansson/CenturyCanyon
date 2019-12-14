@@ -21,10 +21,8 @@ public class ThrustBlockMaster : MonoBehaviour, ISpawnable
 
     public void Spawn(Vector3 positionInFuture, Vector3 offset, bool facesRight = true)
     {
-        future.SetActive(true);
-        past.SetActive(true);
-        future.transform.position = positionInFuture;
-        past.transform.position = positionInFuture + offset;
+        Instantiate(future, positionInFuture, Quaternion.identity);
+        Instantiate(past, positionInFuture + offset, Quaternion.identity);
         future.GetComponent<ParticleSystem>().Play();
     }
 }

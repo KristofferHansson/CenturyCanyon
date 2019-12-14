@@ -63,7 +63,7 @@ public class ThrustBlock : MonoBehaviour
     {
         //movement = Vector3.zero;
         Invoke("selfDestruct", destructionCountdown);
-        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
     }
 
     private void selfDestruct()
