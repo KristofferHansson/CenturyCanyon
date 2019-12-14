@@ -506,6 +506,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2534714889805675275}
     m_Modifications:
+    - target: {fileID: 7983391800645763893, guid: c996bb8e10d7fc04ba712d2ed784c71b,
+        type: 3}
+      propertyPath: m_Name
+      value: bgf
+      objectReference: {fileID: 0}
     - target: {fileID: 1099645994786079252, guid: c996bb8e10d7fc04ba712d2ed784c71b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -560,11 +565,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7983391800645763893, guid: c996bb8e10d7fc04ba712d2ed784c71b,
-        type: 3}
-      propertyPath: m_Name
-      value: bgf
       objectReference: {fileID: 0}
     - target: {fileID: 3999978638030140699, guid: c996bb8e10d7fc04ba712d2ed784c71b,
         type: 3}
@@ -631,9 +631,7 @@ PrefabInstance:
       propertyPath: strengths.Array.data[4]
       value: 0.6
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: -7642118725153840690, guid: c996bb8e10d7fc04ba712d2ed784c71b, type: 3}
-    - {fileID: -3938009500965996552, guid: c996bb8e10d7fc04ba712d2ed784c71b, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c996bb8e10d7fc04ba712d2ed784c71b, type: 3}
 --- !u!1 &5457757709941011040 stripped
 GameObject:
@@ -683,11 +681,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: FutureGirl@Idle
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: 409d3c57116862d43b31fe2df8993553,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 5a474d2b615525f4583eefa8149347f8, type: 2}
     - target: {fileID: -4216859302048453862, guid: 409d3c57116862d43b31fe2df8993553,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -758,6 +751,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.4
       objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 409d3c57116862d43b31fe2df8993553,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 5a474d2b615525f4583eefa8149347f8, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 409d3c57116862d43b31fe2df8993553, type: 3}
 --- !u!4 &3837331775772388101 stripped
